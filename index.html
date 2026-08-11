@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceOS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="finance-nav">
+        <ul>
+            <li>
+                <a href="#overview" class="active">Overview</a>
+            </li>
+
+            <li>
+                <a href="#transactions">Transactions</a>
+            </li>
+
+            <li>
+                <a href="#investments">Investments</a>
+            </li>
+
+            <li>
+                <a href="#budgets">Budgets</a>
+            </li>
+
+            <li>
+                <a href="#goals">Goals</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Overview -->
+        <section id="overview">
+
+            <h1>FinanceOS</h1>
+
+            <!-- Time Period Selector -->
+            <div id="period-selector">
+                <label for="period">View:</label>
+
+                <select id="period">
+                    <option value="week" selected>Week</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+
+
+            <!-- Financial Summary -->
+            <section id="financial-summary">
+
+                <article class="summary-card">
+                    <h2>Total Spent</h2>
+                    <p id="total-spent">₹0</p>
+                </article>
+
+                <article class="summary-card">
+                    <h2>Total Received</h2>
+                    <p id="total-received">₹0</p>
+                </article>
+
+                <article class="summary-card">
+                    <h2>Balance</h2>
+                    <p id="balance">₹0</p>
+                </article>
+
+            </section>
+
+
+            <!-- Spending Breakdown -->
+            <section id="spending-breakdown">
+
+                <h2>Spending Breakdown</h2>
+
+                <div id="spending-chart">
+                    <!-- Pie chart will be added later -->
+                </div>
+
+            </section>
+
+
+            <!-- Goal Progress -->
+            <section id="goal-progress">
+
+                <h2>Goal Progress</h2>
+
+                <p id="goal-name">Emergency Fund</p>
+
+                <p>
+                    <span id="goal-current">₹0</span>
+                    /
+                    <span id="goal-target">₹0</span>
+                </p>
+
+                <progress id="goal-bar" value="0" max="100"></progress>
+
+                <p id="goal-percentage">0%</p>
+
+            </section>
+
+
+            <!-- Comparative Analysis -->
+            <section id="comparative-analysis">
+
+                <h2>Comparative Analysis</h2>
+
+                <p id="comparison-period">
+                    This week vs last week
+                </p>
+
+                <article class="comparison-card">
+                    <h3>Spending</h3>
+                    <p id="spending-comparison">₹0</p>
+                </article>
+
+                <article class="comparison-card">
+                    <h3>Received</h3>
+                    <p id="received-comparison">₹0</p>
+                </article>
+
+                <article class="comparison-card">
+                    <h3>Savings</h3>
+                    <p id="savings-comparison">₹0</p>
+                </article>
+
+            </section>
+
+
+            <!-- Portfolio Status -->
+            <section id="portfolio-status">
+
+                <h2>Current Portfolio</h2>
+
+                <p id="portfolio-value">₹0</p>
+
+                <p id="portfolio-change">0%</p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

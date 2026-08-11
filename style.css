@@ -1,0 +1,329 @@
+/* =========================
+   COLOR SYSTEM
+========================= */
+
+:root {
+    --bg-primary: #0D0D0C;
+    --bg-surface: #171715;
+    --bg-card: #1E1D1A;
+
+    --accent-gold: #C9A96E;
+    --accent-emerald: #1F6F5B;
+
+    --text-primary: #F3EFE6;
+    --text-secondary: #A9A49A;
+
+    --border-color: #34322D;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+#finance-nav {
+    background-color: var(--bg-surface);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#finance-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#finance-nav a {
+    display: inline-block;
+
+    color: var(--text-secondary);
+    text-decoration: none;
+
+    padding: 0.5rem 0.8rem;
+
+    transition: all 0.2s ease;
+}
+
+#finance-nav a:hover {
+    color: var(--accent-gold);
+    transform: translateY(-4px);
+}
+
+#finance-nav a.active {
+    background-color: var(--bg-primary);
+    color: var(--accent-gold);
+
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+
+/* =========================
+   OVERVIEW
+========================= */
+
+#overview {
+    padding: 3rem;
+}
+
+#overview h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+
+/* =========================
+   PERIOD SELECTOR
+========================= */
+
+#period-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-bottom: 2rem;
+}
+
+#period-selector label {
+    color: var(--text-secondary);
+}
+
+#period {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+
+    padding: 0.5rem 0.8rem;
+
+    cursor: pointer;
+}
+
+#period:focus {
+    outline: 1px solid var(--accent-gold);
+}
+
+
+/* =========================
+   FINANCIAL SUMMARY
+========================= */
+
+#financial-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+    transition: transform 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-gold);
+}
+
+.summary-card h2 {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: normal;
+
+    margin: 0 0 0.75rem;
+}
+
+.summary-card p {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+
+/* =========================
+   SPENDING BREAKDOWN
+========================= */
+
+#spending-breakdown {
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#spending-breakdown h2 {
+    margin-top: 0;
+}
+
+#spending-chart {
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-secondary);
+}
+
+
+/* =========================
+   GOAL PROGRESS
+========================= */
+
+#goal-progress {
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#goal-progress h2 {
+    margin-top: 0;
+}
+
+#goal-name {
+    color: var(--text-secondary);
+}
+
+#goal-bar {
+    width: 100%;
+    height: 12px;
+}
+
+
+/* =========================
+   COMPARATIVE ANALYSIS
+========================= */
+
+#comparative-analysis {
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#comparative-analysis h2 {
+    margin-top: 0;
+}
+
+#comparison-period {
+    color: var(--text-secondary);
+}
+
+.comparison-card {
+    display: inline-block;
+
+    width: 30%;
+
+    background-color: var(--bg-surface);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.comparison-card h3 {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.comparison-card p {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PORTFOLIO STATUS
+========================= */
+
+#portfolio-status {
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+}
+
+#portfolio-status h2 {
+    margin-top: 0;
+}
+
+#portfolio-value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#portfolio-change {
+    color: var(--accent-emerald);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    #finance-nav ul {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    #overview {
+        padding: 1rem;
+    }
+
+    #financial-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-card {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+}
