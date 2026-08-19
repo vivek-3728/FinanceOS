@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transactions - FinanceOS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav id="finance-nav">
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="transactions.html" class="active">
+                    Transactions
+                </a>
+            </li>
+
+            <li>
+                <a href="investments.html">
+                    Investments
+                </a>
+            </li>
+
+            <li>
+                <a href="budgets.html">
+                    Budgets
+                </a>
+            </li>
+
+            <li>
+                <a href="goals.html">
+                    Goals
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- =========================
+         TRANSACTIONS
+    ========================== -->
+
+    <main>
+
+        <section id="transactions">
+
+            <h1>Transactions</h1>
+
+
+            <!-- Add Transaction -->
+
+            <form id="transaction-form">
+
+
+                <div>
+
+                    <label for="transaction-type">
+                        Type
+                    </label>
+
+                    <select id="transaction-type">
+
+                        <option value="expense">
+                            Expense
+                        </option>
+
+                        <option value="income">
+                            Income
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="transaction-amount">
+                        Amount
+                    </label>
+
+                    <input
+                        type="number"
+                        id="transaction-amount"
+                        placeholder="Enter amount"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="transaction-category">
+                        Category
+                    </label>
+
+                    <select id="transaction-category">
+
+                        <option value="food">
+                            Food
+                        </option>
+
+                        <option value="clothing">
+                            Clothing
+                        </option>
+
+                        <option value="travel">
+                            Travel
+                        </option>
+
+                        <option value="miscellaneous">
+                            Miscellaneous
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="transaction-date">
+                        Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="transaction-date"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="transaction-description">
+                        Description
+                    </label>
+
+                    <input
+                        type="text"
+                        id="transaction-description"
+                        placeholder="What was this transaction?"
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Add Transaction
+                </button>
+
+
+            </form>
+
+
+            <!-- Transaction List -->
+
+            <section id="transaction-list">
+
+                <h2>Your Transactions</h2>
+
+                <div id="transactions-container">
+                    <!-- Transactions will appear here -->
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

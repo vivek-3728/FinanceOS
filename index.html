@@ -1,153 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>FinanceOS</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- Navigation -->
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <nav id="finance-nav">
+
         <ul>
+
             <li>
-                <a href="#overview" class="active">Overview</a>
+                <a href="index.html" class="active">
+                    Overview
+                </a>
             </li>
 
             <li>
-                <a href="#transactions">Transactions</a>
+                <a href="transaction.html">
+                    Transactions
+                </a>
             </li>
 
             <li>
-                <a href="#investments">Investments</a>
+                <a href="investments.html">
+                    Investments
+                </a>
             </li>
 
             <li>
-                <a href="#budgets">Budgets</a>
+                <a href="budgets.html">
+                    Budgets
+                </a>
             </li>
 
             <li>
-                <a href="#goals">Goals</a>
+                <a href="goals.html">
+                    Goals
+                </a>
             </li>
+
         </ul>
+
     </nav>
 
 
-    <!-- Main Content -->
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
     <main>
 
-        <!-- Overview -->
+
+        <!-- =========================
+             OVERVIEW
+        ========================== -->
+
         <section id="overview">
+
 
             <h1>FinanceOS</h1>
 
-            <!-- Time Period Selector -->
+
+            <!-- =========================
+                 PERIOD SELECTOR
+            ========================== -->
+
             <div id="period-selector">
-                <label for="period">View:</label>
+
+                <label for="period">
+                    View:
+                </label>
 
                 <select id="period">
-                    <option value="week" selected>Week</option>
-                    <option value="month">Month</option>
-                    <option value="year">Year</option>
+
+                    <option value="week" selected>
+                        Week
+                    </option>
+
+                    <option value="month">
+                        Month
+                    </option>
+
+                    <option value="year">
+                        Year
+                    </option>
+
                 </select>
+
             </div>
 
 
-            <!-- Financial Summary -->
+            <!-- =========================
+                 FINANCIAL SUMMARY
+            ========================== -->
+
             <section id="financial-summary">
 
-                <article class="summary-card">
+
+                <div class="summary-card">
+
                     <h2>Total Spent</h2>
-                    <p id="total-spent">₹0</p>
-                </article>
 
-                <article class="summary-card">
+                    <p id="total-spent">
+                        ₹0
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
                     <h2>Total Received</h2>
-                    <p id="total-received">₹0</p>
-                </article>
 
-                <article class="summary-card">
+                    <p id="total-received">
+                        ₹0
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
                     <h2>Balance</h2>
-                    <p id="balance">₹0</p>
-                </article>
+
+                    <p id="balance">
+                        ₹0
+                    </p>
+
+                </div>
+
 
             </section>
 
 
-            <!-- Spending Breakdown -->
+            <!-- =========================
+                 SPENDING BREAKDOWN
+            ========================== -->
+
             <section id="spending-breakdown">
 
-                <h2>Spending Breakdown</h2>
+                <h2>
+                    Spending Breakdown
+                </h2>
+
 
                 <div id="spending-chart">
+
                     <!-- Pie chart will be added later -->
+
                 </div>
 
             </section>
 
 
-            <!-- Goal Progress -->
+            <!-- =========================
+                 GOAL PROGRESS
+            ========================== -->
+
             <section id="goal-progress">
 
-                <h2>Goal Progress</h2>
+                <h2>
+                    Goal Progress
+                </h2>
 
-                <p id="goal-name">Emergency Fund</p>
 
-                <p>
-                    <span id="goal-current">₹0</span>
-                    /
-                    <span id="goal-target">₹0</span>
+                <p id="goal-name">
+                    Emergency Fund
                 </p>
 
-                <progress id="goal-bar" value="0" max="100"></progress>
 
-                <p id="goal-percentage">0%</p>
+                <p>
+
+                    <span id="goal-current">
+                        ₹0
+                    </span>
+
+                    /
+
+                    <span id="goal-target">
+                        ₹0
+                    </span>
+
+                </p>
+
+
+                <progress
+                    id="goal-bar"
+                    value="0"
+                    max="100">
+                </progress>
+
+
+                <p id="goal-percentage">
+                    0%
+                </p>
 
             </section>
 
 
-            <!-- Comparative Analysis -->
+            <!-- =========================
+                 COMPARATIVE ANALYSIS
+            ========================== -->
+
             <section id="comparative-analysis">
 
-                <h2>Comparative Analysis</h2>
+
+                <h2>
+                    Comparative Analysis
+                </h2>
+
 
                 <p id="comparison-period">
                     This week vs last week
                 </p>
 
-                <article class="comparison-card">
-                    <h3>Spending</h3>
-                    <p id="spending-comparison">₹0</p>
-                </article>
 
-                <article class="comparison-card">
-                    <h3>Received</h3>
-                    <p id="received-comparison">₹0</p>
-                </article>
+                <div class="comparison-card">
 
-                <article class="comparison-card">
-                    <h3>Savings</h3>
-                    <p id="savings-comparison">₹0</p>
-                </article>
+                    <h3>
+                        Spending
+                    </h3>
+
+                    <p id="spending-comparison">
+                        ₹0
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-card">
+
+                    <h3>
+                        Received
+                    </h3>
+
+                    <p id="received-comparison">
+                        ₹0
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-card">
+
+                    <h3>
+                        Savings
+                    </h3>
+
+                    <p id="savings-comparison">
+                        ₹0
+                    </p>
+
+                </div>
+
 
             </section>
 
 
-            <!-- Portfolio Status -->
+            <!-- =========================
+                 PORTFOLIO STATUS
+            ========================== -->
+
             <section id="portfolio-status">
 
-                <h2>Current Portfolio</h2>
 
-                <p id="portfolio-value">₹0</p>
+                <h2>
+                    Current Portfolio
+                </h2>
 
-                <p id="portfolio-change">0%</p>
+
+                <p id="portfolio-value">
+                    ₹0
+                </p>
+
+
+                <p id="portfolio-change">
+                    0%
+                </p>
+
 
             </section>
 
+
         </section>
+
 
     </main>
 
@@ -155,4 +307,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>

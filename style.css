@@ -327,3 +327,335 @@ body {
         margin-right: 0;
     }
 }
+/* =========================
+   TRANSACTIONS
+========================= */
+
+#transactions {
+    padding: 2rem;
+}
+
+#transactions > h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================
+   TRANSACTION FORM
+========================= */
+
+#transaction-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#transaction-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#transaction-form label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   INPUTS & SELECTS
+========================= */
+
+#transaction-form input,
+#transaction-form select {
+    width: 100%;
+
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+
+    padding: 0.7rem;
+}
+
+#transaction-form input:focus,
+#transaction-form select:focus {
+    outline: 1px solid var(--accent-gold);
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+#transaction-form button {
+    background-color: var(--accent-gold);
+    color: var(--bg-primary);
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 0.7rem 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+                opacity 0.2s ease;
+}
+
+#transaction-form button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================
+   TRANSACTION LIST
+========================= */
+
+#transaction-list {
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+}
+
+#transaction-list h3 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   TRANSACTION CONTAINER
+========================= */
+
+#transactions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    #transactions {
+        padding: 1rem;
+    }
+
+    #transaction-form {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================
+   TRANSACTIONS PAGE
+========================= */
+
+#transactions {
+
+    padding: 2rem;
+
+}
+
+
+#transactions > h1 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+/* =========================
+   TRANSACTION FORM
+========================= */
+
+#transaction-form {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 1rem;
+
+    background-color:
+        var(--bg-card);
+
+    border: 1px solid
+        var(--border-color);
+
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+    margin-bottom: 2rem;
+
+}
+
+
+#transaction-form div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+}
+
+
+#transaction-form label {
+
+    color:
+        var(--text-secondary);
+
+    font-size: 0.9rem;
+
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+#transaction-form input,
+#transaction-form select {
+
+    width: 100%;
+
+    background-color:
+        var(--bg-surface);
+
+    color:
+        var(--text-primary);
+
+    border: 1px solid
+        var(--border-color);
+
+    border-radius: 6px;
+
+    padding: 0.7rem;
+
+}
+
+
+#transaction-form input:focus,
+#transaction-form select:focus {
+
+    outline: 1px solid
+        var(--accent-gold);
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+#transaction-form button {
+
+    background-color:
+        var(--accent-gold);
+
+    color:
+        var(--bg-primary);
+
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 0.7rem 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+#transaction-form button:hover {
+
+    opacity: 0.9;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   TRANSACTION LIST
+========================= */
+
+#transaction-list {
+
+    background-color:
+        var(--bg-card);
+
+    border: 1px solid
+        var(--border-color);
+
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+}
+
+
+#transaction-list h2 {
+
+    margin-bottom: 1rem;
+
+}
+
+
+#transactions-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    #transactions {
+
+        padding: 1rem;
+
+    }
+
+
+    #transaction-form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
